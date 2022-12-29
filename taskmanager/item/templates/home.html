@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Task Manager</title>
+    </head>
+    <body>
+        <h1> The list </h1>
+        <form method="POST">
+            {% csrf_token %}
+            <input name="item_text" id="id_new_item" placeholder="Enter to-do item"/>
+        </form>
+        <table id="id_list_table">
+            {% for item in items %}
+            <tr><td>{{ forloop.counter }}: {{ item.title }}</td></tr>
+            {% endfor %}
+
+        </table>
+
+    </body>
+</html>
