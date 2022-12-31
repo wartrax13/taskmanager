@@ -5,4 +5,5 @@ flake8==6.0.0
 mccabe==0.7.0
 pycodestyle==2.10.0
 pyflakes==3.0.1
+python-decouple==3.6
 sqlparse==0.4.3
